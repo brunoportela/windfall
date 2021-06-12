@@ -5,7 +5,7 @@ function Feed(props) {
   
   // order by score
   const posts = props.posts.sort((a, b) => b.score - a.score);
-  console.log(posts)
+  
   return (
     <div>
       <div className="division subtle">

@@ -36,7 +36,6 @@ subredditController.filterData = (req, res, next) => {
 
   const {id, subreddit, title, thumbnail, permalink, ups, score, created} = res.locals.data.children[index].data;
   res.locals = {id, subreddit, title, thumbnail, permalink, ups, score, created}
-  console.log(res.locals)
   next();
   
 };
