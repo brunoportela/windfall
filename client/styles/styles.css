@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #00a6c7;
+}
+
+hr {
+  border-top: 0px;
+}
+
+p {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* SEARCH AND SUBSCRIBE FORM */
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 10px;
+  height: 50px;
+  width: 500px;
+  border: none;
+}
+
+.subLabelDiv {
+  height: 50px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 60px;
+}
+
+.subLabel {
+  font-size: large;
+}
+
+.inputField {
+  height: 50px;
+  width: 400px;
+  border: none;
+  font-size: large;
+  background-color: #fafafa;
+  padding: 0 15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.subButton {
+  border: none;
+  background-color: #00a6c7;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  color: white;
+  font-size: large;
+  height: 50px;
+  width: 190px;
+}
+
+button:hover {
+  background-color: #066f85;
+}
+
+/* DIVISION */
+
+.division {
+  font-size: small;
+  margin: 45px 32px 0px;
+  width: 700px;
+}
+
+/* POSTS */
+
+.postContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #bfbfbf;
+  border-style: solid;
+  height: 9rem;
+  margin: 1.5rem;
+  width: 700px;
+  transition: all 0.1s ease-in-out;
+}
+
+.postContainer:hover {
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail {
+  margin: 0 30px;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.subtle {
+  color: gray;
+}
+
+.subreddit {
+  font-size: smaller;
+  margin-bottom: 15px;
+}
+
+.title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  font-size: small;
+}
+
+.likeIcon {
+  transform: scale(0.6);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #00a6c7;
+}
+
+@media only screen and (max-width: 760px) {
+  body {
+    transform: scale(0.8);
+  }
+}
